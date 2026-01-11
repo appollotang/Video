@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoOutreach - Find a Lead</title>
+    <style>
+        /* Coldroast Theme Variables */
+        :root {
+            --bg-deep: #0e0f12;       /* Very dark cool charcoal */
+            --bg-card: #16181d;       /* Slightly lighter panel */
+            --text-main: #e0e0e0;     /* Soft white */
+            --text-muted: #8b949e;    /* Muted cool grey */
+            --accent-roast: #c08b5c;  /* Roasted coffee accent */
+            --accent-glow: rgba(192, 139, 92, 0.15);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 40px;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #252830;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        /* Styling the specific branded text */
+        .brand-name {
+            color: var(--accent-roast);
+            font-weight: 800;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        /* Video styling */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px var(--accent-glow);
+            border: 1px solid #333;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            outline: none;
+        }
+
+        /* Button (Optional - for the "Send" action implication) */
+        .cta-button {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--accent-roast);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: opacity 0.2s;
+        }
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
 <body>
-  <h2>My Video</h2>
-  <video width="640" height="480" controls>
-    <source src="EchoOutreach_click_match_send.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+    <div class="container">
+        <h1>
+            <span class="brand-name">EchoOutreach</span> Find a Lead.
+        </h1>
+        <div class="tagline">Click. Match. Send.</div>
+
+        <div class="video-wrapper">
+            <video controls playsinline>
+                <source src="EchoOutreach_click_match_send.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        </div>
+
 </body>
 </html>
